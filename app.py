@@ -19,14 +19,14 @@ st.markdown(
     unsafe_allow_html=True
 )
 
-# Title and Description
-st.title("Datasweeper Sterling Integrator by Moiz Qureshi")
-st.write("Transform your files between CSV and Excel formats with built-in data cleaning and visualization, creating the Project for Quarter 3!")
 
 # Sidebar Menu with two buttons
 sidebar_option = st.sidebar.radio("Select Option", ["XLSX and CSV", "Mindset"])
 
 if sidebar_option == "XLSX and CSV":
+    # Title and Description
+    st.title("Datasweeper Sterling Integrator by Moiz Qureshi")
+    st.write("Transform your files between CSV and Excel formats with built-in data cleaning and visualization, creating the Project for Quarter 3!")
     # File Uploader
     uploaded_files = st.file_uploader("Upload your files (accepts CSV and Excel):", type=["csv", "xlsx"], accept_multiple_files=True)
 
